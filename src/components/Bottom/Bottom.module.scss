@@ -1,0 +1,66 @@
+.container {
+  padding: 44px 100px 76px 87px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 300px;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+
+  span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.54px;
+    text-align: left;
+    color: var(--main-blue-500);
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 13px 0;
+
+  span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: right;
+    color: var(--main-blue-500);
+    text-decoration: underline;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 13px 0;
+
+  button {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.19px;
+    text-align: left;
+    color: var(--main-blue-500);
+    background-color: transparent;
+    border: 1px solid var(--main-blue-500);
+    border-radius: 30px;
+    padding: 12px 34px;
+
+    & + button {
+      color: white;
+      background-color: var(--main-blue-500);
+    }
+  }
+}

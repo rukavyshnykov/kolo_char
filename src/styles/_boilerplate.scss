@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy-Regular"),
+    url(../fonts/Gilroy-Regular.ttf) format("truetype");
+}
+
+body {
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+
+button {
+  border: none;
+}

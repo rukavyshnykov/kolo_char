@@ -1,0 +1,29 @@
+.container {
+  margin: 54px 100px 76px;
+  background-color: var(--main-blue-500);
+  border-radius: 30px;
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    background-image: url(/src/assets/logo-white.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: -50px;
+    opacity: 0.5;
+  }
+
+  span {
+    margin: 61px 31px 61px auto;
+    max-width: 72%;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: right;
+    color: white;
+  }
+}

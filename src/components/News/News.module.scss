@@ -1,0 +1,133 @@
+.container {
+  padding: 73px 100px 62px;
+  display: flex;
+  flex-direction: column;
+  gap: 58px 0;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+
+  h2 {
+    color: var(--main-blue-500);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: right;
+    margin: 0;
+  }
+
+  button {
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    width: fit-content;
+    background-color: transparent;
+    padding: 10px 34px;
+    color: var(--main-blue-500);
+    border: 1px solid var(--main-blue-500);
+
+    &:nth-of-type(2) {
+      background-color: var(--main-blue-500);
+      color: white;
+      padding: 10px 24px;
+      margin-left: 23px;
+    }
+  }
+}
+
+.line {
+  height: 1px;
+  background-color: var(--main-blue-500);
+  flex-grow: 1;
+  margin: 0 40px 0 56px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--main-blue-500);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+
+  &::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--main-blue-500);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+.content {
+  display: flex;
+  gap: 0 30px;
+}
+
+.item {
+  width: calc(33.3% - 20px);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  button {
+    margin: 0 0 25px 26px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    background-color: var(--main-blue-500);
+    color: white;
+    width: fit-content;
+    border-radius: 30px;
+    padding: 11px 39px;
+  }
+}
+
+.title {
+  margin: 22px 14px 29px 26px;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: var(--main-blue-500);
+}
+
+.image {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.label {
+  padding: 5px 20px;
+  width: fit-content;
+  position: absolute;
+  top: 19px;
+  left: 26px;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16.5px;
+  text-align: left;
+  color: var(--main-blue-500);
+  border-radius: 30px;
+}
